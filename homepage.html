@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+       
+       <style>
+
+        @font-face {
+            font-family: Distant Galaxy;
+            src: url("assets/fonts/sf_distant_galaxy/SF\ Distant\ Galaxy\ AltOutline.ttf");
+        }
+
+        body {
+            margin: 0;
+            background-color: black;
+          }
+          
+          .star {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background-color: white;
+          }
+
+        p {
+            color: #FFFF82;
+            font-family: Roboto;
+        }
+
+        h1{
+            color: white;
+            font-family: Distant Galaxy;
+        }
+
+        a{
+            color: white;
+            font-family: Distant Galaxy;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            flex: 50%;
+            padding: 10px;
+            padding-right: 70px;
+            padding-left: 70px;
+            padding-top: 50px;
+        }
+
+        ul{
+            color: #FFFF82;
+            font-family: Roboto;
+        }
+
+        
+        
+        </style>
+    </head>
+    <body>
+        <script>
+
+        // Sets the number of stars we wish to display
+        const numStars = 100;
+
+        // For every star we want to display
+        for (let i = 0; i < numStars; i++) {
+            let star = document.createElement("div");  
+            star.className = "star";
+            var xy = getRandomPosition();
+            star.style.top = xy[0] + 'px';
+            star.style.left = xy[1] + 'px';
+            document.body.append(star);
+        }
+
+        // Gets random x, y values based on the size of the container
+        function getRandomPosition() {  
+            var y = window.innerWidth;
+            var x = window.innerHeight;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+            return [randomX,randomY];
+        }
+        </script>
+        <div class ="row">
+        <div class="column"> 
+            <img src="assets/IMG_4194.jpg" width="500" height="660">
+        </div>
+        <div class="column"> 
+            
+            <h1>About Me</h1>
+            <p>I'm a sophomore at Columbia University studying computer science, French, and psychology. Developing applications built around topics that I love from 
+            linguistics to rap to Star Wars is my joy. Beyond web and app development, I'm deeply interested in ML, computational linguistics, ontology, and related
+            topics. As a Youtube Partner and former revenue director for the Columbia Spectator, I've also grown interested in bussiness strategy and product managment.
+            </p>
+            <p>
+            I'm always looking for new opporuntities, mentors, collaborators, Jedi masters, etc. 
+            </p>
+            <a href = "mailto:swq2101@columbia.edu">If you're not force sensitive, click here to contact me. 
+            </a>
+
+            <h1>Professional Experience</h1>
+            <ul>
+                <li>Backend Developer and Project Implementation at Columbia Data Product Initiative (Fall 2020-)</li>
+                <li>Software Engineering Intern at A Robotics Company (Summer 2020)</li>
+                <li>Virtial Tech Camp Instructor at ID Tech Camps (Summer 2020)</li>
+                <li>Revenue Manager at the Columbia Spectator (Fall 2019-Summer 2020)</li>
+            </ul>
+
+            <a href = "https://www.linkedin.com/in/sophia-q-40b180111/"> Hyperdrive to my LinkedIn
+            </a>
+
+            <h1>Upcoming Projects</h1>
+            <ul>
+                <li>Stranded: an application for targeted hair product recommendations</li>
+                <li>Tag Who's It?: an application with integrated ML model to identify music producers based off producer tag.</li>
+                <li>Clubswipe: With Columbia DPI, a Tinder for students and clubs</li>
+            </ul>
+
+            <h1>Past Projects</h1>
+            <ul>
+                <li>Don't Burn Your TV: A data visualization using Bokeh API to map landfills. Winner of Most Unique Hack and Best Domain Name @ Columbia Divhacks 2020</li>
+                <li>Return of the Yoda: A population simulator to model the unknown Yoda species' population growth</li>
+            </ul>
+
+            <a href = "https://github.com/swq2101/"> May my Github be with you.
+            </a>
+        
+
+        </div>
+        </div>
+
+    </body>
+</html>
