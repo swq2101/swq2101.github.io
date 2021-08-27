@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 
-export default function ContainerBlock({ children, ...customMeta }) {
+export default function ContainerBlock() {
   const router = useRouter();
 
   return (
@@ -13,7 +13,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
       </Head>
       <main className="dark:bg-gray-800 w-full">
         <Navbar />
-        <div>{children}</div>
       </main>
     </div>
   );
