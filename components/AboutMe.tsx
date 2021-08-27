@@ -14,14 +14,14 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            I'm a junior at Columbia University studying computer science and French. I started coding becuase I love spending time
-            on a screen and want to make that my job. 
+            I'm a junior at Columbia University studying computer science and French. I started coding because I love spending time
+            on a screen and want to make that pastime my job. 
           </p>
           <p
             className="leading-loose text-lg md:text-lg  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            Right now, I'm looking for opporunities in product managment and AI/ML. Ideas and products that 
+            Right now, I'm looking for opportunities in product managment and AI/ML. Ideas and products that 
             I'm specifically excited by are those pertaining to language/linguistics, media, fashion, food, or any industry 
             with opportunity for novel development and growth!
           </p>
