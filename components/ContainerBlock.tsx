@@ -3,7 +3,13 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 
-export default function ContainerBlock({ children, ...customMeta }) {
+interface ContainerProps extends React.HTMLAttributes<Element> {
+  children: React.ReactNode,
+  title: "string";
+}
+
+
+export default function ContainerBlock({ children, ...props}: ContainerProps) {
   const router = useRouter();
 
   return (
