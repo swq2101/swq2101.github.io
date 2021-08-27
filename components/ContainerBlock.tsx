@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 
 interface ContainerProps extends React.HTMLAttributes<Element> {
-  children: React.ReactNode,
-  title?: "string";
+  children: React.ReactNode;
+  title?: string;
 }
 
 
