@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 interface ContainerProps extends React.HTMLAttributes<Element> {
   children: React.ReactNode,
-  title: "string";
+  title?: "string";
 }
 
 
